@@ -23,6 +23,14 @@ jobs:
         run: |
           chmod +x script2.sh
           ./script2.sh
+          
+      - name: Upload Outputs
+        uses: actions/upload-artifact@v2
+        with:
+          name: script-outputs
+          path: |
+            output_script1.txt
+            output_script2.txt
       
           
      
