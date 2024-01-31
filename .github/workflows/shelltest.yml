@@ -29,8 +29,7 @@ jobs:
         with:
           name: script-outputs
           path: |
-            output_script1.txt
-            output_script2.txt
+            output.txt
       
           
      
