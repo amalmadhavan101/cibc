@@ -17,8 +17,8 @@ jobs:
       - name: Execute script1 
         run: |
           chmod +x script1.sh
-          ./script1.sh  >>output.txt
-          echo $(date) >>output.txt
+          ./script1.sh  >> output.txt
+          echo $(date) >> output.txt
           
       - name: Execute Script 2
         run: |
