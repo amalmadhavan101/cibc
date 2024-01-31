@@ -34,21 +34,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: script-outputs
-          path: |
-            output.txt
-  append-to-artifact:
-    runs-on: 'self-hosted'
-    needs: shell-SetUp
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Append to Artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: output-artifact
           path: output.txt
-          if-no-files-found: continue-on-error
-      
+  
           
      
