@@ -19,6 +19,7 @@ jobs:
           chmod +x script1.sh
           chmod 777 output.txt
           ./script1.sh  >> output.txt
+          cat output.txt
           echo $(date) >> output.txt
           
       - name: Execute Script 2
@@ -26,6 +27,7 @@ jobs:
           chmod +x script2.sh
           chmod 777 output.txt
           ./script2.sh >> output.txt
+          cat output.txt
           echo $(date) >> output.txt
           
       - name: Upload Outputs
