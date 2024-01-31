@@ -17,16 +17,18 @@ jobs:
       - name: Execute script1
         run: |
           echo "Executing script1..."
-          chmod +x script1.sh
+          chmod +x script1.sh output.txt
           ./script1.sh  >>output.txt
           echo $(date) >>output.txt
 
           
-      - name: Execute Script 2
+      - name: Execute script1
         run: |
+          echo "Executing script1..."
           chmod +x script2.sh
-          ./script2.sh >>output.txt
+          ./script2.sh  >>output.txt
           echo $(date) >>output.txt
+
           
       - name: Upload Outputs
         uses: actions/upload-artifact@v2
