@@ -1,2 +1,1 @@
-Here Displays all the outputs of the scripts as Artifactory
---------------------------------------------------------------------
+
