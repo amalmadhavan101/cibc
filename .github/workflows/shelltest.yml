@@ -14,11 +14,13 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Execute script1 
+      - name: Execute script1
         run: |
+          echo "Executing script1..."
           chmod +x script1.sh
-          ./script1.sh  >> output.txt
-          echo $(date) >> output.txt
+          ./script1.sh  >>output.txt
+          echo $(date) >>output.txt
+
           
       - name: Execute Script 2
         run: |
