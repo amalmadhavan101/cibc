@@ -18,16 +18,16 @@ jobs:
         run: |
           echo "Executing script1..."
           chmod +x script1.sh output.txt
-          ./script1.sh  >output.txt
-          echo $(date) >output.txt
+          ./script1.sh  >>output.txt
+          echo $(date) >>output.txt
 
           
       - name: Execute script1
         run: |
           echo "Executing script1..."
           chmod +x script2.sh
-          ./script2.sh  >output.txt
-          echo $(date) >output.txt
+          ./script2.sh  >>output.txt
+          echo $(date) >>output.txt
 
           
       - name: Upload Outputs
